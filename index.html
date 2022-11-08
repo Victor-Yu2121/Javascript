@@ -6,10 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="./script.js" defer></script>
-  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+  <h1>VMDB</u></h1>
+
+  <label id = "select" for="Movies">Search for a movie:</label>
+
+  <select name="Movies" id="Movies">
+    <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+    <option value="Spider-Man: Into the Spider-Verse">Spider-Man: Into the Spider-Verse</option>
+    <option value="Spider-Man: Far from Home">Spider-Man: Far from Home</option>
+    <option value="Boruto: Naruto the Movie">Boruto: Naruto the Movie</option>
+    <option value="The Last: Naruto the Movie">The Last: Naruto the Movie</option>
+    <option value="Mobile Suit Gundam Narrative">Mobile Suit Gundam Narrative</option> 
+    <option value="Thor: Ragnarok">Thor: Ragnarok</option>  
+    <option value="Top Gun: Maverick">Top Gun: Maverick</option>
+    <option value="Minions: The Rise of Gru">Minions: The Rise of Gru</option>
+    <option value="Persian Lessons">Persian Lessons</option>
+  </select>
+  <button id="button">Get</button>
 </head>
 <body>
-  
+  <div id="display" hidden>
+    <p id="info"></p>
+    <p id="basicInfo"></p>
+    <p id="vote"></p>
+    <p id="overviewLabel"></p>
+    <p id="overviewText"></p> 
+    <img id="cover"></img>
+    <iframe id="video"></iframe>
+  </div>
 </body>
+
 </html>
